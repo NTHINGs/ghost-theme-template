@@ -1,10 +1,10 @@
-<header
+<header class="col-md-4 col-12"
   {{#if @blog.cover_image}}
     style="background-image: url({{@blog.cover_image}})"
   {{/if}}>
   {{#if @blog.logo}}
     <a href="{{@blog.url}}">
-      <img src="{{@blog.logo}}" alt="{{t "Logo"}}">
+      <img src="{{@blog.logo}}" width="300px" alt="{{t "Logo"}}">
     </a>
   {{/if}}
   <h1>
@@ -13,4 +13,6 @@
   <p>
     {{@blog.description}}
   </p>
+
+   {{> "site-footer"}}
 </header>
